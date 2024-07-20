@@ -1,5 +1,61 @@
 {
   "dependencies": {
+    "com.soundlight.eventsystem": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlight.eventsystem.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ecd9f4b72940202df73bc179a700d6f4f26a0f23"
+    },
+    "com.soundlightinteractive.editor": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.editor.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e1671525cd15fab92456dd5dbd031290e07bfa0b"
+    },
+    "com.soundlightinteractive.extensions": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.extensions.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c61ce64f82d4374f6c38d34d5ba60e553c83fe2c"
+    },
+    "com.soundlightinteractive.manager": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.manager.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a5057535392633d731ed85656d53b1e2f824cd7c"
+    },
+    "com.soundlightinteractive.pooling": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.pooling.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "03efa033a00a838414de4fbbda8008ebe4d835c7"
+    },
+    "com.soundlightinteractive.securesave": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.securesave.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "dbfcc21b813b8dcc6ddec6998d7eaf1d38a1b3fa"
+    },
+    "com.soundlightinteractive.settings": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.settings.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0ea76bb27e8283236d7745ba1698d213be416d84"
+    },
+    "com.soundlightinteractive.utils": {
+      "version": "https://github.com/SoundlightInteractive/com.soundlightinteractive.utils.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "dcbe925d7a10148fd10a302ce6b50fb192b38f11"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,

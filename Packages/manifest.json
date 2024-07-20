@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.soundlight.eventsystem": "https://github.com/SoundlightInteractive/com.soundlight.eventsystem.git",
+    "com.soundlightinteractive.editor": "https://github.com/SoundlightInteractive/com.soundlightinteractive.editor.git",
+    "com.soundlightinteractive.extensions": "https://github.com/SoundlightInteractive/com.soundlightinteractive.extensions.git",
+    "com.soundlightinteractive.manager": "https://github.com/SoundlightInteractive/com.soundlightinteractive.manager.git",
+    "com.soundlightinteractive.pooling": "https://github.com/SoundlightInteractive/com.soundlightinteractive.pooling.git",
+    "com.soundlightinteractive.securesave": "https://github.com/SoundlightInteractive/com.soundlightinteractive.securesave.git",
+    "com.soundlightinteractive.settings": "https://github.com/SoundlightInteractive/com.soundlightinteractive.settings.git",
+    "com.soundlightinteractive.utils": "https://github.com/SoundlightInteractive/com.soundlightinteractive.utils.git",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
