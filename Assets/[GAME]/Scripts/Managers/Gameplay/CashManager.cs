@@ -1,14 +1,37 @@
 using _GAME_.Scripts.Entities.CashEntity;
 using _GAME_.Scripts.GlobalVariables;
 using _GAME_.Scripts.Managers.Generic;
+using Sirenix.OdinInspector;
 using SoundlightInteractive.Manager;
 using SoundlightInteractive.Utils;
+using UnityEngine;
 
 namespace _GAME_.Scripts.Managers.Gameplay
 {
     public class CashManager : Manager<CashManager>
     {
         private const float InitialMoney = 10000;
+        [ReadOnly, SerializeField] private float currentMoney;
+
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                AddMoney(1000);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                StatusCode statusCode = SubtractCash(1000);
+
+                if (statusCode == StatusCode.NotEnoughMoney)
+                {
+                    SIDebug.LogError("There is no enough money for this subtraction!");
+                }
+            }
+        }
 
         public override void ResetActor()
         {
@@ -39,6 +62,8 @@ namespace _GAME_.Scripts.Managers.Gameplay
             CashEntity entity = GetOrCreateEntity();
             entity.currentCashAmount += amount;
             EntityManager<DataType, CashEntity>.Save(DataType.Cash, entity, true);
+
+            currentMoney = entity.currentCashAmount;
         }
 
         public StatusCode SubtractCash(float amount)
@@ -52,6 +77,8 @@ namespace _GAME_.Scripts.Managers.Gameplay
 
             entity.currentCashAmount -= amount;
             EntityManager<DataType, CashEntity>.Save(DataType.Cash, entity, true);
+
+            currentMoney = entity.currentCashAmount;
 
             return StatusCode.Successful;
         }
